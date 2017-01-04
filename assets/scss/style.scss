@@ -1,0 +1,42 @@
+////
+/// Style
+////
+@import '../bower_components/scss-tackle-box/tackle-box';
+
+:root body .w_cptex {
+  @include tb-grid-group();
+  box-sizing: border-box;
+
+  * { box-sizing: inherit; }
+
+  .w_cptex-article {
+    @include tb-grid-gutters();
+    max-width: calc(100% / 3);
+    flex-shrink: 1;
+    margin-bottom: tb-mg-v(normal);
+    width: 100%;
+  }
+
+  .w_cptex_thumb-no {
+    width: 100%;
+    height: 56%;
+  }
+
+  ul, li {
+    display: inline-block;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    list-style: none;
+  }
+
+  li {
+    &:before { content: "\00a0"; }
+    &:after { content: ", "; }
+
+    &:last-of-type {
+      &:after { content: ""; }
+    }
+  }
+}

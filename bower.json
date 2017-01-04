@@ -1,0 +1,20 @@
+{
+  "name": "CPT-Excerpts-Shortcode",
+  "description": "A shortcode to output excerpts of Custom Post Types.",
+  "main": "Gruntfile.js",
+  "authors": [
+    "Wolozo"
+  ],
+  "license": "GPL-2.0+",
+  "homepage": "https://github.com/Wolozo/CPT-Excerpts-Shortcode",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "scss-tackle-box": "~0.0"
+  }
+}
