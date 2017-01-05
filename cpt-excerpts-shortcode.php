@@ -5,7 +5,7 @@
  * Plugin URI:        https://github.com/wolozo/CPT-Excerpts-Shortcode
  * GitHub Plugin URI: https://github.com/wolozo/CPT-Excerpts-Shortcode
  * Description:       A shortcode to output excerpts of Custom Post Types.
- * Version:           0.1.0
+ * Version:           0.1.1
  * Author:            Wolozo
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       w_cpt-excerpts-shortcode
@@ -26,24 +26,6 @@ add_action( 'wp_enqueue_scripts', 'w_cptex_enqueue_scripts' );
 
 if ( ! function_exists( 'w_cptex_shortcode' ) ) {
   /**
-   * Usage:
-   * [w_cptex
-   *   id=""
-   *   class=""
-   *   post_type=""
-   *   posts_number=""
-   *   offset_number=""
-   *   meta_date=""
-   *   featured_image="" // [yes,no]
-   *   featured_image_size="" // [thumbnail, medium, large, full, array(32,32) ]
-   *   read_more="" // [yes,no]
-   *   read_more_class=""
-   *   author="" // [yes,no]
-   *   date="" // [yes,no]
-   *   cats="" // [yes,no]
-   *   tags="" // [yes,no]
-   * ]   *
-   *
    * @todo Element priority/order
    */
   function w_cptex_shortcode() {
@@ -218,7 +200,6 @@ if ( ! function_exists( 'w_cptex_shortcode' ) ) {
 
         return <<<HTML
 <div $id $class>$out</div>
-<hr>
 HTML;
       } );
   }

@@ -1,6 +1,6 @@
 {
   "name": "CPT-Excerpts-Shortcode",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A shortcode to output excerpts of Custom Post Types.",
   "main": "Gruntfile.js",
   "author": "Wolozo",
